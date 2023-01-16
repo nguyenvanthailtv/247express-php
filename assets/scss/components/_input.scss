@@ -1,0 +1,10 @@
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0 20px;
+
+    &::placeholder{
+        @extend .text-md;
+    }
+}

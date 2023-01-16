@@ -1,0 +1,9 @@
+.btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    @extend .text-sm;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}

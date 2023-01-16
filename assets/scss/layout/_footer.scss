@@ -1,0 +1,112 @@
+.footer{
+    background-color: $primary-color-1;
+    overflow: hidden;
+    &__logo{
+        a{
+            width: 80%;
+            display: block;
+            height: 100%;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    &__content{
+
+        margin: 20px 0;
+
+        &__text{
+            @extend .line-camp-4;
+            color: $white-color;
+
+            @include lg{
+                display: none;
+            }
+        }
+
+        .contact__list{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 30px 0 0;
+
+            .contact__item{
+                width: 40px;
+                height: 40px;
+                margin: 0 10px 0 0;
+                .contact__link{
+                    font-size: 1.5rem;
+                    display: flex;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white-color;
+                    border: 1px solid;
+                    border-radius: 2px;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover,&.active{
+                    .contact__link{
+                        color: $black-color;
+                        background: $white-color;
+                        border: none;
+                    }
+                }
+
+            }
+        }
+
+        h2{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $white-color;
+            position: relative;
+            &::after{
+                @extend .p-absolute;
+                top: calc(100% + 6px);
+                width: 50px;
+                height: 2px;
+                background-color: #ffe32e;
+            }
+        }
+
+        .catalog__list{
+
+            .catalog__item{
+                margin-top:30px;
+
+                .catalog__link{
+                    color: $white-color;
+                }
+            }
+        }
+
+        .infomation__list{
+            margin-top: 30px;
+
+            .infomation__item{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                color: $white-color;
+                i{
+                    font-size: 2rem;
+                    padding-right: 20px;
+                }
+
+                a{
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+    .serepate{
+        width: 100%;
+        height: 1.5px;
+        margin: 40px 0;
+        background-color: rgba($white-color,0.4);
+    }
+}
